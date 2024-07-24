@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spam Email Detector</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Wix+Madefor+Display&display=swap');
+		* {
+			font-family: 'Poppins';
+			user-select: none;
+		}
+
+		h1 {
+			font-family: 'Wix madefor display';
+		}
+		body{
+			background: url('./bg3.svg');
+		}
+	</style>
+</head>
+
+<body class="bg-[#87d4fe]">
+
+	<div class="flex items-center justify-center gap-24 h-screen flex-wrap">
+
+
+		<div class="flex gap-12 items-center justify-center rounded-3xl flex-col text-white">
+
+			<h1 class="text-3xl">Spam Email Detector</h1>
+			<form method="post" action="/detect" class="flex flex-col gap-8">
+				<textarea name="email_text" id="text" cols="40" rows="10" placeholder="Enter email text"
+					class="resize-none focus:outline-none p-4 rounded-xl bg-[#001c6d] text-white w-[85vw] sm:w-96"></textarea>
+				<button type="submit" class="bg-[#001c6d] py-4 text-xl text-white rounded-xl px-6"><a href="C:\Users\DELL\Desktop\PBL files\PBL-SpamDetect\PBL1 - Copy\Templates\result.html"> Detect spam</a></button>
+			</form>
+		</div>
+		<div class="image hidden lg:block">
+			<img src="https://img.freepik.com/free-vector/hacker-activity-illustrated_23-2148542047.jpg?w=900&t=st=1684608790~exp=1684609390~hmac=3a807ef2a1470f3a0f43ba0bb1e023d767522dbe6e5ac031d10d6ad1f570584a"
+				alt="" class="w-96">
+		</div>
+	</div>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

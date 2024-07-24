@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Result</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Wix+Madefor+Display&display=swap');
+
+		* {
+			font-family: 'Poppins';
+			user-select: none;
+		}
+
+		body {
+			background: url('./bg3.svg');
+		}
+		
+	</style>
+</head>
+
+
+<body class="bg-[#87d4fe]">
+
+	
+
+	<div class="main flex flex-row-reverse items-center justify-center gap-24 h-screen flex-wrap">
+
+
+		<div class="flex gap-14 justify-center rounded-3xl flex-col px-4 text-white">
+
+			<h1 class="text-3xl">Spam Email Detection Result</h1>
+			<div class="flex flex-col items-start gap-4">
+				<p class="text-xl flex gap-4 flex-col md:flex-row" id="text"><span>Your email text : </span><span>{ {email_text} }</span></p>
+				<p class="text-3xl flex gap-4 flex-col md:flex-row" id="result"><span>The result of the spam detection is: </span><span><b>{{ result} }</b></span></p>
+				<a class="bg-[#001c6d] my-12 py-4 px-8 text-lg text-white rounded-xl text-center" href="C:\Users\DELL\Desktop\PBL files\PBL-SpamDetect\PBL1 - Copy\Templates\index.html">Try again</a>
+			</div>
+		</div>
+		<div class="image hidden lg:block">
+			<img src="https://img.freepik.com/free-vector/hacker-activity-illustrated_23-2148542047.jpg?w=900&t=st=1684608790~exp=1684609390~hmac=3a807ef2a1470f3a0f43ba0bb1e023d767522dbe6e5ac031d10d6ad1f570584a"
+				alt="" class="w-96">
+		</div>
+
+		<script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
